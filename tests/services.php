@@ -16,5 +16,6 @@ return function (ContainerConfigurator $configurator) {
     ;
 
     $services->load('Meals\\Application\\', '../src/Application/*');
+    $services->load('Meals\\Domain\\Poll\\Service\\', '../src/Domain/Poll/Service/*');
     $services->load('tests\\Meals\\Functional\\Fake\\', '../tests/Functional/Fake/*');
 };
