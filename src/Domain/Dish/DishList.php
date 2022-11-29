@@ -34,4 +34,24 @@ class DishList
 
         return false;
     }
+
+    /**
+     * Dishes more than one.
+     *
+     * @return bool|Dish
+     */
+    public function hasNext(): bool|Dish
+    {
+        return next($this->dishes);
+    }
+
+    /**
+     * Get first dish.
+     *
+     * @return Dish
+     */
+    public function first(): Dish
+    {
+        return reset($this->dishes);
+    }
 }
